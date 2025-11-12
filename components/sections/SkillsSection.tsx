@@ -2,6 +2,8 @@
 import React, { forwardRef } from 'react';
 import { motion } from 'framer-motion';
 import { Section } from '../ui/Section';
+import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
+import { Badge } from '../ui/badge';
 import { SKILLS } from '../../constants';
 import type { SkillCategory } from '../../types';
 
@@ -22,31 +24,38 @@ const skillItemVariants = {
 
 const SkillCategoryCard: React.FC<{ item: SkillCategory }> = ({ item }) => {
   return (
-    <motion.div
-      variants={categoryVariants}
-      className="bg-white dark:bg-warm-cards p-24 rounded-card shadow-card backdrop-blur-sm border border-overlay transition-all duration-200"
-      whileHover={{
-        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)'
-      }}
-    >
-      <h3 className="text-h3 text-accent mb-16">{item.category}</h3>
+    <Card asChild>
       <motion.div
-        className="flex flex-wrap gap-8"
-        variants={containerVariants}
+        variants={categoryVariants}
+        className="cursor-pointer"
+        whileHover={{
+          boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)'
+        }}
       >
-        {item.skills.map(skill => (
+        <CardHeader>
+          <CardTitle>{item.category}</CardTitle>
+        </CardHeader>
+        <CardContent>
           <motion.div
-            key={skill.name}
-            variants={skillItemVariants}
-            className="flex items-center gap-8 bg-accent/10 px-12 py-8 rounded-card border border-overlay transition-all duration-200"
-            whileHover={{ scale: 1.05 }}
+            className="flex flex-wrap gap-8"
+            variants={containerVariants}
           >
-            <skill.icon className="w-5 h-5 text-accent" />
-            <span className="font-semibold text-caption text-primary dark:text-primary-dark">{skill.name}</span>
+            {item.skills.map(skill => (
+              <Badge key={skill.name} variant="default" asChild>
+                <motion.div
+                  variants={skillItemVariants}
+                  className="cursor-pointer"
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <skill.icon className="w-5 h-5 text-accent" />
+                  <span>{skill.name}</span>
+                </motion.div>
+              </Badge>
+            ))}
           </motion.div>
-        ))}
+        </CardContent>
       </motion.div>
-    </motion.div>
+    </Card>
   );
 };
 
