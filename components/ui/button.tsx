@@ -5,20 +5,20 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "../../lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-8 rounded-card font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex items-center justify-center gap-3 rounded-card font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
-        default: "bg-accent text-white hover:bg-hover-accent hover:shadow-card-hover",
-        secondary: "bg-warm-cards dark:bg-warm-cards-dark text-primary dark:text-primary-dark border border-overlay hover:bg-warm-cards/80 dark:hover:bg-warm-cards-dark/80 hover:shadow-card-hover",
-        ghost: "text-secondary dark:text-secondary-dark hover:text-accent hover:bg-accent/10",
-        link: "text-accent underline-offset-4 hover:underline",
+        default: "bg-accent text-white hover:bg-accent-hover shadow-subtle hover:shadow-card",
+        secondary: "bg-surface text-primary border border-border hover:bg-surface-hover hover:shadow-card",
+        ghost: "text-secondary hover:text-primary hover:bg-surface",
+        link: "text-accent hover:text-accent-hover underline-offset-4 hover:underline",
       },
       size: {
-        default: "px-24 py-12",
-        sm: "px-16 py-8 text-caption",
-        lg: "px-32 py-16",
-        icon: "h-10 w-10",
+        default: "px-8 py-3.5 text-body",
+        sm: "px-6 py-2.5 text-small",
+        lg: "px-10 py-4 text-large",
+        icon: "h-12 w-12",
       },
     },
     defaultVariants: {

@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
-import { useTheme } from './hooks/useTheme';
 import useLenis from './hooks/useLenis';
 
 import { HeroSection } from './components/sections/HeroSection';
@@ -12,15 +11,13 @@ import { ExperienceSection } from './components/sections/ExperienceSection';
 import { PersonalSection } from './components/sections/PersonalSection';
 import { ContactSection } from './components/sections/ContactSection';
 import { NavDots } from './components/ui/NavDots';
-import { ThemeToggle } from './components/ui/ThemeToggle';
 import { SECTIONS } from './constants';
 import { AiAssistant } from './components/ui/AiAssistant';
 
 const App: React.FC = () => {
-  const { theme } = useTheme();
   const mainRef = useRef<HTMLElement>(null);
   const [activeSection, setActiveSection] = useState(SECTIONS[0].id);
-  
+
   useLenis(mainRef);
 
   const { scrollYProgress } = useScroll({ container: mainRef });
@@ -60,18 +57,17 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className={`${theme} font-sans`}>
+    <div className="font-sans bg-background">
       <main
         ref={mainRef}
-        className="bg-background dark:bg-background-dark text-primary dark:text-primary-dark transition-colors duration-500"
+        className="bg-background text-primary"
         style={{
             height: '100vh',
             overflowY: 'auto',
             scrollSnapType: 'y mandatory',
         }}
       >
-        <motion.div className="fixed top-0 left-0 right-0 h-1 bg-accent z-50" style={{ scaleX, transformOrigin: "0%" }} />
-        <ThemeToggle />
+        <motion.div className="fixed top-0 left-0 right-0 h-0.5 bg-accent z-50" style={{ scaleX, transformOrigin: "0%" }} />
         <NavDots activeSection={activeSection} />
 
         <HeroSection ref={(el) => { sectionRefs.current[0] = el; }} />
