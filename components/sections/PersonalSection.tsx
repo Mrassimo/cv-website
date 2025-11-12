@@ -83,7 +83,7 @@ export const PersonalSection = forwardRef<HTMLElement>((_, ref) => {
   return (
     <Section id="personal" ref={ref}>
       <div className="w-full max-w-5xl">
-        <h2 className="text-h2 text-primary dark:text-primary-dark text-center mb-8">Personal & Education</h2>
+        <h2 className="text-h2 text-primary text-center mb-8">Personal & Education</h2>
         <div className="h-1 w-24 bg-accent mx-auto mb-40"></div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-32">
           <motion.div
@@ -108,7 +108,7 @@ export const PersonalSection = forwardRef<HTMLElement>((_, ref) => {
                 <CardDescription className="font-semibold mt-8">University of Sydney</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-body text-secondary dark:text-secondary-dark">Focus: Statistics, Data Analysis, Psychology & Philosophy.</p>
+                <p className="text-body text-secondary">Focus: Statistics, Data Analysis, Psychology & Philosophy.</p>
               </CardContent>
             </Card>
           </motion.div>

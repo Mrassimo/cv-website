@@ -1,6 +1,6 @@
 
 import { useEffect } from 'react';
-import Lenis from '@studio-freight/lenis';
+import Lenis from 'lenis';
 
 const useLenis = (ref: React.RefObject<HTMLElement>) => {
   useEffect(() => {

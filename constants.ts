@@ -1,7 +1,7 @@
 import type { Project, SkillCategory, Experience } from './types';
 import {
   SnowflakeIcon, AWSIcon, DbtIcon, AirflowIcon, PolarsIcon, PythonIcon, SQLIcon,
-  LangchainIcon, RAGIcon, TensorflowIcon, LookerIcon, TableauIcon, PowerBIIcon,
+  LangchainIcon, RAGIcon, TensorflowIcon, VectorDbIcon, SemanticSearchIcon, LookerIcon, TableauIcon, PowerBIIcon,
   AgileIcon, JiraIcon, GitIcon, DockerIcon, VercelIcon, SupabaseIcon, CanvaIcon,
   LlmBiIcon, GeocodingIcon, AhgdIcon, HcfIcon, WestpacIcon, MedibankIcon, CbaIcon, NdiaIcon
 } from './components/ui/Icons';
@@ -85,8 +85,8 @@ export const SKILLS: SkillCategory[] = [
             { name: 'LangChain', icon: LangchainIcon },
             { name: 'RAG', icon: RAGIcon },
             { name: 'TensorFlow', icon: TensorflowIcon },
-            { name: 'Vector DBs', icon: VercelIcon }, // Placeholder
-            { name: 'Semantic Search', icon: SupabaseIcon }, // Placeholder
+            { name: 'Vector DBs', icon: VectorDbIcon },
+            { name: 'Semantic Search', icon: SemanticSearchIcon }
         ]
     },
     {

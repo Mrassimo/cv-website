@@ -63,7 +63,7 @@ export const SkillsSection = forwardRef<HTMLElement>((_, ref) => {
   return (
     <Section id="skills" ref={ref}>
       <div className="text-center w-full">
-        <h2 className="text-h2 text-primary dark:text-primary-dark mb-8">Skills & Technologies</h2>
+        <h2 className="text-h2 text-primary mb-8">Skills & Technologies</h2>
         <div className="h-1 w-24 bg-accent mx-auto mb-40"></div>
         <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-32 w-full max-w-7xl mx-auto"

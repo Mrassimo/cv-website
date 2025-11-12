@@ -44,9 +44,9 @@ export const AspirationsSection = forwardRef<HTMLElement>((_, ref) => {
             viewport={{ once: true, amount: 0.8 }}
             variants={textVariants}
         >
-            <h2 className="text-h2 text-primary dark:text-primary-dark mb-8">My Next Mission</h2>
+            <h2 className="text-h2 text-primary mb-8">My Next Mission</h2>
             <div className="h-1 w-24 bg-accent mx-auto mb-40"></div>
-            <p className="text-xl md:text-2xl font-light leading-relaxed text-secondary dark:text-secondary-dark">
+            <p className="text-xl md:text-2xl font-light leading-relaxed text-secondary">
                 "My goal is to architect the next generation of data infrastructure—<span className="text-accent font-semibold">intelligent, AI-native pipelines</span> that bridge the gap between raw data and actionable insights. I am passionate about integrating advanced AI and LLM capabilities directly into the data engineering lifecycle, creating systems that are not just automated, but <span className="text-accent font-semibold">truly autonomous and insightful</span>."
             </p>
         </motion.div>
