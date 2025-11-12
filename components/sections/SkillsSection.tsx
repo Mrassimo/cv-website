@@ -24,22 +24,25 @@ const SkillCategoryCard: React.FC<{ item: SkillCategory }> = ({ item }) => {
   return (
     <motion.div
       variants={categoryVariants}
-      className="bg-white/5 dark:bg-black/10 p-6 rounded-lg shadow-lg backdrop-blur-sm border border-white/10 dark:border-black/20"
+      className="bg-white dark:bg-warm-cards p-24 rounded-card shadow-card backdrop-blur-sm border border-overlay transition-all duration-200"
+      whileHover={{
+        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)'
+      }}
     >
-      <h3 className="text-xl font-bold text-highlight mb-4">{item.category}</h3>
-      <motion.div 
-        className="flex flex-wrap gap-4"
+      <h3 className="text-h3 text-accent mb-16">{item.category}</h3>
+      <motion.div
+        className="flex flex-wrap gap-8"
         variants={containerVariants}
       >
         {item.skills.map(skill => (
           <motion.div
             key={skill.name}
             variants={skillItemVariants}
-            className="flex items-center gap-2 bg-primary/5 dark:bg-accent/5 px-3 py-2 rounded-md"
-            whileHover={{ scale: 1.1, color: '#00D4FF' }}
+            className="flex items-center gap-8 bg-accent/10 px-12 py-8 rounded-card border border-overlay transition-all duration-200"
+            whileHover={{ scale: 1.05 }}
           >
-            <skill.icon className="w-5 h-5" />
-            <span className="font-medium text-sm">{skill.name}</span>
+            <skill.icon className="w-5 h-5 text-accent" />
+            <span className="font-semibold text-caption text-primary dark:text-primary-dark">{skill.name}</span>
           </motion.div>
         ))}
       </motion.div>
@@ -51,10 +54,10 @@ export const SkillsSection = forwardRef<HTMLElement>((_, ref) => {
   return (
     <Section id="skills" ref={ref}>
       <div className="text-center w-full">
-        <h2 className="text-4xl md:text-5xl font-bold mb-2">Skills & Technologies</h2>
-        <div className="h-1 w-24 bg-highlight mx-auto mb-12"></div>
+        <h2 className="text-h2 text-primary dark:text-primary-dark mb-8">Skills & Technologies</h2>
+        <div className="h-1 w-24 bg-accent mx-auto mb-40"></div>
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl mx-auto"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-32 w-full max-w-7xl mx-auto"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}

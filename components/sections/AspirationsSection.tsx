@@ -18,7 +18,7 @@ export const AspirationsSection = forwardRef<HTMLElement>((_, ref) => {
     <Section id="aspirations" ref={ref}>
       <div className="relative w-full max-w-3xl text-center">
          <motion.div
-             className="absolute -top-12 -left-12 text-highlight/30 opacity-50"
+             className="absolute -top-12 -left-12 text-accent/30 opacity-50"
              animate={{
                 scale: [1, 1.1, 1],
                 rotate: [0, 5, 0]
@@ -28,7 +28,7 @@ export const AspirationsSection = forwardRef<HTMLElement>((_, ref) => {
             <BrainIcon className="w-24 h-24"/>
          </motion.div>
          <motion.div
-             className="absolute -bottom-12 -right-12 text-highlight/30 opacity-50"
+             className="absolute -bottom-12 -right-12 text-accent/30 opacity-50"
              animate={{
                 scale: [1, 1.1, 1],
                 rotate: [0, -5, 0]
@@ -37,17 +37,17 @@ export const AspirationsSection = forwardRef<HTMLElement>((_, ref) => {
          >
             <SpaceshipIcon className="w-24 h-24"/>
          </motion.div>
-        
+
         <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.8 }}
             variants={textVariants}
         >
-            <h2 className="text-4xl md:text-5xl font-bold mb-2">My Next Mission</h2>
-            <div className="h-1 w-24 bg-highlight mx-auto mb-12"></div>
-            <p className="text-xl md:text-2xl font-light leading-relaxed text-primary/80 dark:text-accent/80">
-                "My goal is to architect the next generation of data infrastructure—<span className="text-highlight font-semibold">intelligent, AI-native pipelines</span> that bridge the gap between raw data and actionable insights. I am passionate about integrating advanced AI and LLM capabilities directly into the data engineering lifecycle, creating systems that are not just automated, but <span className="text-highlight font-semibold">truly autonomous and insightful</span>."
+            <h2 className="text-h2 text-primary dark:text-primary-dark mb-8">My Next Mission</h2>
+            <div className="h-1 w-24 bg-accent mx-auto mb-40"></div>
+            <p className="text-xl md:text-2xl font-light leading-relaxed text-secondary dark:text-secondary-dark">
+                "My goal is to architect the next generation of data infrastructure—<span className="text-accent font-semibold">intelligent, AI-native pipelines</span> that bridge the gap between raw data and actionable insights. I am passionate about integrating advanced AI and LLM capabilities directly into the data engineering lifecycle, creating systems that are not just automated, but <span className="text-accent font-semibold">truly autonomous and insightful</span>."
             </p>
         </motion.div>
       </div>
