@@ -11,34 +11,37 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({ project, i
 
   return (
     <motion.div
-      className="bg-white/5 dark:bg-black/10 rounded-lg p-6 shadow-lg backdrop-blur-sm border border-white/10 dark:border-black/20 overflow-hidden w-full"
-      whileHover={{ scale: 1.02, boxShadow: "0px 10px 30px rgba(0, 212, 255, 0.1)" }}
-      transition={{ type: 'spring', stiffness: 300 }}
+      className="bg-white dark:bg-warm-cards rounded-card p-24 shadow-card backdrop-blur-sm border border-overlay overflow-hidden w-full transition-all duration-200"
+      whileHover={{
+        scale: 1.02,
+        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)'
+      }}
+      transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
     >
-      <div className={`grid grid-cols-1 md:grid-cols-5 gap-6 items-center`}>
+      <div className={`grid grid-cols-1 md:grid-cols-5 gap-16 items-center`}>
         <div className={`md:col-span-3 ${isReversed ? 'md:order-2' : ''}`}>
-            <div className="flex justify-between items-start mb-4">
-                <h3 className="text-xl font-bold text-highlight">{project.title}</h3>
+            <div className="flex justify-between items-start mb-16">
+                <h3 className="text-h3 text-accent">{project.title}</h3>
                 {project.github && (
                 <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-primary/50 dark:text-accent/50 hover:text-highlight transition-colors ml-4"
+                    className="text-secondary dark:text-secondary-dark hover:text-accent transition-colors duration-200 ml-16"
                     aria-label={`View ${project.title} on GitHub`}
                 >
                     <GithubIcon className="w-6 h-6" />
                 </a>
                 )}
             </div>
-            <ul className="space-y-2 list-disc list-inside text-primary/80 dark:text-accent/80">
+            <ul className="space-y-8 list-disc list-inside text-primary dark:text-primary-dark">
                 {project.impact.map((point, i) => (
                 <li key={i}>{point}</li>
                 ))}
             </ul>
-            <div className="mt-4 flex flex-wrap gap-2">
+            <div className="mt-16 flex flex-wrap gap-8">
                 {project.tech.map((tech, i) => (
-                <span key={i} className="bg-highlight/10 text-highlight text-xs font-semibold px-2 py-1 rounded-full">
+                <span key={i} className="bg-accent/10 text-accent text-caption font-semibold px-12 py-8 rounded-card border border-overlay">
                     {tech}
                 </span>
                 ))}
@@ -66,10 +69,10 @@ export const ProjectsSection = forwardRef<HTMLElement>((_, ref) => {
   return (
     <Section id="projects" ref={ref}>
       <div className="text-center w-full">
-        <h2 className="text-4xl md:text-5xl font-bold mb-2">Key Projects & Innovations</h2>
-        <div className="h-1 w-24 bg-highlight mx-auto mb-12"></div>
-        <motion.div 
-            className="w-full max-w-5xl mx-auto space-y-8"
+        <h2 className="text-h2 text-primary dark:text-primary-dark mb-8">Key Projects & Innovations</h2>
+        <div className="h-1 w-24 bg-accent mx-auto mb-40"></div>
+        <motion.div
+            className="w-full max-w-5xl mx-auto space-y-32"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}

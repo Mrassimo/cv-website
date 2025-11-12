@@ -23,27 +23,27 @@ const itemVariants = {
 export const ContactSection = forwardRef<HTMLElement>((_, ref) => {
   return (
     <Section id="contact" ref={ref}>
-      <motion.div 
+      <motion.div
         className="text-center"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
       >
-        <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-bold mb-2">Let's Build Data Worlds</motion.h2>
-        <motion.div variants={itemVariants} className="h-1 w-24 bg-highlight mx-auto mb-12"></motion.div>
-        <motion.p variants={itemVariants} className="max-w-xl mx-auto text-lg text-primary/80 dark:text-accent/80 mb-8">
+        <motion.h2 variants={itemVariants} className="text-h2 text-primary dark:text-primary-dark mb-8">Let's Build Data Worlds</motion.h2>
+        <motion.div variants={itemVariants} className="h-1 w-24 bg-accent mx-auto mb-40"></motion.div>
+        <motion.p variants={itemVariants} className="max-w-xl mx-auto text-body text-secondary dark:text-secondary-dark mb-32">
           I'm always excited to connect with like-minded professionals and explore new opportunities in the world of data and AI. Feel free to reach out.
         </motion.p>
-        <motion.div variants={itemVariants} className="flex justify-center items-center gap-6 mb-12">
-           <a href={`mailto:${PERSONAL_INFO.email}`} className="font-semibold hover:text-highlight transition-colors">{PERSONAL_INFO.email}</a>
+        <motion.div variants={itemVariants} className="flex justify-center items-center gap-16 mb-40">
+           <a href={`mailto:${PERSONAL_INFO.email}`} className="text-body font-semibold text-primary dark:text-primary-dark hover:text-accent transition-colors duration-200">{PERSONAL_INFO.email}</a>
         </motion.div>
-        <motion.div variants={itemVariants} className="flex justify-center items-center gap-8">
-            <motion.a href={`mailto:${PERSONAL_INFO.email}`} whileHover={{ y: -5 }} className="text-primary/70 dark:text-accent/70 hover:text-highlight transition-colors"><EnvelopeIcon className="w-8 h-8"/></motion.a>
-            <motion.a href={PERSONAL_INFO.linkedin} target="_blank" rel="noopener noreferrer" whileHover={{ y: -5 }} className="text-primary/70 dark:text-accent/70 hover:text-highlight transition-colors"><LinkedinIcon className="w-8 h-8"/></motion.a>
-            <motion.a href={PERSONAL_INFO.github} target="_blank" rel="noopener noreferrer" whileHover={{ y: -5 }} className="text-primary/70 dark:text-accent/70 hover:text-highlight transition-colors"><GithubIcon className="w-8 h-8"/></motion.a>
+        <motion.div variants={itemVariants} className="flex justify-center items-center gap-32">
+            <motion.a href={`mailto:${PERSONAL_INFO.email}`} whileHover={{ y: -5 }} transition={{ duration: 0.2 }} className="text-secondary dark:text-secondary-dark hover:text-accent transition-colors duration-200"><EnvelopeIcon className="w-8 h-8"/></motion.a>
+            <motion.a href={PERSONAL_INFO.linkedin} target="_blank" rel="noopener noreferrer" whileHover={{ y: -5 }} transition={{ duration: 0.2 }} className="text-secondary dark:text-secondary-dark hover:text-accent transition-colors duration-200"><LinkedinIcon className="w-8 h-8"/></motion.a>
+            <motion.a href={PERSONAL_INFO.github} target="_blank" rel="noopener noreferrer" whileHover={{ y: -5 }} transition={{ duration: 0.2 }} className="text-secondary dark:text-secondary-dark hover:text-accent transition-colors duration-200"><GithubIcon className="w-8 h-8"/></motion.a>
         </motion.div>
-         <motion.footer variants={itemVariants} className="mt-16 text-sm text-primary/50 dark:text-accent/50">
+         <motion.footer variants={itemVariants} className="mt-40 text-caption text-secondary dark:text-secondary-dark">
             &copy; {new Date().getFullYear()} Massimo Raso. Built with React, Tailwind CSS, and Framer Motion.
         </motion.footer>
       </motion.div>

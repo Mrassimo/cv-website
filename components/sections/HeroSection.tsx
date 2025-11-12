@@ -146,10 +146,10 @@ export const HeroSection = forwardRef<HTMLElement>((_, ref) => {
         <motion.p className="text-body text-secondary dark:text-secondary-dark mb-8" variants={itemVariants}>
           {PERSONAL_INFO.location} &bull; {PERSONAL_INFO.citizen}
         </motion.p>
-        <motion.div className="flex flex-wrap justify-center items-center gap-8" variants={itemVariants}>
+        <motion.div className="flex flex-wrap justify-center items-center gap-16" variants={itemVariants}>
            <a
              href={`mailto:${PERSONAL_INFO.email}`}
-             className="flex items-center gap-2 px-4 py-2 rounded-card bg-warm-cards dark:bg-warm-cards-dark hover:bg-warm-cards/80 dark:hover:bg-warm-cards-dark/80 transition-colors duration-300 hover:shadow-card-hover text-primary dark:text-primary-dark font-medium"
+             className="flex items-center gap-8 px-24 py-12 rounded-card bg-warm-cards dark:bg-warm-cards-dark hover:bg-warm-cards/80 dark:hover:bg-warm-cards-dark/80 transition-all duration-200 hover:shadow-card-hover text-primary dark:text-primary-dark font-semibold border border-overlay"
            >
              <EnvelopeIcon className="w-5 h-5" />
              <span className="hidden sm:inline">{PERSONAL_INFO.email}</span>
@@ -158,7 +158,7 @@ export const HeroSection = forwardRef<HTMLElement>((_, ref) => {
              href={PERSONAL_INFO.linkedin}
              target="_blank"
              rel="noopener noreferrer"
-             className="flex items-center gap-2 px-4 py-2 rounded-card bg-accent text-white hover:bg-hover-accent transition-colors duration-300 hover:shadow-card-hover font-medium"
+             className="flex items-center gap-8 px-24 py-12 rounded-card bg-accent text-white hover:bg-hover-accent transition-all duration-200 hover:shadow-card-hover font-semibold"
            >
              <LinkedinIcon className="w-5 h-5" />
              <span className="hidden sm:inline">LinkedIn</span>
@@ -167,7 +167,7 @@ export const HeroSection = forwardRef<HTMLElement>((_, ref) => {
              href={PERSONAL_INFO.github}
              target="_blank"
              rel="noopener noreferrer"
-             className="flex items-center gap-2 px-4 py-2 rounded-card bg-warm-cards dark:bg-warm-cards-dark hover:bg-warm-cards/80 dark:hover:bg-warm-cards-dark/80 transition-colors duration-300 hover:shadow-card-hover text-primary dark:text-primary-dark font-medium"
+             className="flex items-center gap-8 px-24 py-12 rounded-card bg-warm-cards dark:bg-warm-cards-dark hover:bg-warm-cards/80 dark:hover:bg-warm-cards-dark/80 transition-all duration-200 hover:shadow-card-hover text-primary dark:text-primary-dark font-semibold border border-overlay"
            >
              <GithubIcon className="w-5 h-5" />
              <span className="hidden sm:inline">GitHub</span>
@@ -176,7 +176,7 @@ export const HeroSection = forwardRef<HTMLElement>((_, ref) => {
       </motion.div>
       <a href="#about" className="absolute bottom-8 z-10 animate-bounce">
           <span className="sr-only">Scroll to next section</span>
-          <ChevronDownIcon className="w-8 h-8 text-secondary/60 hover:text-accent transition-colors duration-300"/>
+          <ChevronDownIcon className="w-8 h-8 text-secondary/60 hover:text-accent transition-colors duration-200"/>
       </a>
     </Section>
   );
