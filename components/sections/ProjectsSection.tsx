@@ -31,14 +31,14 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({ project, i
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-secondary dark:text-secondary-dark hover:text-accent transition-colors duration-200 ml-16"
+                    className="text-secondary hover:text-accent transition-colors duration-200 ml-16"
                     aria-label={`View ${project.title} on GitHub`}
                   >
                     <GithubIcon className="w-6 h-6" />
                   </a>
                 )}
               </div>
-              <ul className="space-y-8 list-disc list-inside text-body text-primary dark:text-primary-dark">
+              <ul className="space-y-8 list-disc list-inside text-body text-primary">
                 {project.impact.map((point, i) => (
                   <li key={i}>{point}</li>
                 ))}
@@ -75,7 +75,7 @@ export const ProjectsSection = forwardRef<HTMLElement>((_, ref) => {
   return (
     <Section id="projects" ref={ref}>
       <div className="text-center w-full">
-        <h2 className="text-h2 text-primary dark:text-primary-dark mb-8">Key Projects & Innovations</h2>
+        <h2 className="text-h2 text-primary mb-8">Key Projects & Innovations</h2>
         <div className="h-1 w-24 bg-accent mx-auto mb-40"></div>
         <motion.div
             className="w-full max-w-5xl mx-auto space-y-32"

@@ -51,7 +51,7 @@ export const AboutSection = forwardRef<HTMLElement>((_, ref) => {
   return (
     <Section id="about" ref={ref}>
       <div className="text-center">
-        <h2 className="text-h2 text-primary dark:text-primary-dark mb-8">Who I Am</h2>
+        <h2 className="text-h2 text-primary mb-8">Who I Am</h2>
         <div className="h-1 w-24 bg-accent mx-auto mb-40"></div>
       </div>
       <motion.div
@@ -76,8 +76,8 @@ export const AboutSection = forwardRef<HTMLElement>((_, ref) => {
                   <card.icon className="w-8 h-8"/>
                 </div>
                 <div className="text-center sm:text-left">
-                  <h3 className="text-h3 text-primary dark:text-primary-dark">{card.title}</h3>
-                  <p className="text-body text-secondary dark:text-secondary-dark mt-8">{card.text}</p>
+                  <h3 className="text-h3 text-primary">{card.title}</h3>
+                  <p className="text-body text-secondary mt-8">{card.text}</p>
                 </div>
               </CardContent>
             </motion.div>
