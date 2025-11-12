@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { motion, useScroll, useSpring } from 'framer-motion';
+import { LazyMotion, domAnimation, m, useScroll, useSpring } from 'framer-motion';
 import useLenis from './hooks/useLenis';
 
 import { HeroSection } from './components/sections/HeroSection';
@@ -57,18 +57,19 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="font-sans bg-background">
-      <main
-        ref={mainRef}
-        className="bg-background text-primary"
-        style={{
-            height: '100vh',
-            overflowY: 'auto',
-            scrollSnapType: 'y mandatory',
-        }}
-      >
-        <motion.div className="fixed top-0 left-0 right-0 h-0.5 bg-accent z-50" style={{ scaleX, transformOrigin: "0%" }} />
-        <NavDots activeSection={activeSection} />
+    <LazyMotion features={domAnimation} strict>
+      <div className="font-sans bg-background">
+        <main
+          ref={mainRef}
+          className="bg-background text-primary"
+          style={{
+              height: '100vh',
+              overflowY: 'auto',
+              scrollSnapType: 'y mandatory',
+          }}
+        >
+          <m.div className="fixed top-0 left-0 right-0 h-0.5 bg-accent z-50" style={{ scaleX, transformOrigin: "0%" }} />
+          <NavDots activeSection={activeSection} />
 
         <HeroSection ref={(el) => { sectionRefs.current[0] = el; }} />
         <AboutSection ref={(el) => { sectionRefs.current[1] = el; }} />
@@ -78,9 +79,10 @@ const App: React.FC = () => {
         <ExperienceSection ref={(el) => { sectionRefs.current[5] = el; }} />
         <PersonalSection ref={(el) => { sectionRefs.current[6] = el; }} />
         <ContactSection ref={(el) => { sectionRefs.current[7] = el; }} />
-      </main>
-      <AiAssistant />
-    </div>
+        </main>
+        <AiAssistant />
+      </div>
+    </LazyMotion>
   );
 };
 

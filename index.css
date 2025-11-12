@@ -1,5 +1,10 @@
 /* Global styles for Massimo Raso Portfolio */
 
+/* Tailwind CSS imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* CSS Reset and Base Styles */
 *,
 *::before,

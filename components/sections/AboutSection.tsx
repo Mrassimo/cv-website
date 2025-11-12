@@ -1,6 +1,6 @@
 
 import React, { forwardRef } from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Section } from '../ui/Section';
 import { Card, CardContent } from '../ui/card';
 import { BlueprintIcon, LightbulbIcon, ShareIcon } from '../ui/Icons';
@@ -54,7 +54,7 @@ export const AboutSection = forwardRef<HTMLElement>((_, ref) => {
         <h2 className="text-h2 text-primary mb-8">Who I Am</h2>
         <div className="h-1 w-24 bg-accent mx-auto mb-40"></div>
       </div>
-      <motion.div
+      <m.div
         className="w-full max-w-4xl space-y-32"
         variants={containerVariants}
         initial="hidden"
@@ -63,7 +63,7 @@ export const AboutSection = forwardRef<HTMLElement>((_, ref) => {
       >
         {cardData.map((card, i) => (
           <Card key={card.title} asChild>
-            <motion.div
+            <m.div
               custom={i}
               variants={cardVariants}
               className="cursor-pointer"
@@ -80,10 +80,10 @@ export const AboutSection = forwardRef<HTMLElement>((_, ref) => {
                   <p className="text-body text-secondary mt-8">{card.text}</p>
                 </div>
               </CardContent>
-            </motion.div>
+            </m.div>
           </Card>
         ))}
-      </motion.div>
+      </m.div>
     </Section>
   );
 });

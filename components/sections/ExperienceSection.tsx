@@ -1,6 +1,6 @@
 
 import React, { forwardRef, useRef } from 'react';
-import { motion, useScroll } from 'framer-motion';
+import { m, useScroll } from 'framer-motion';
 import { Section } from '../ui/Section';
 import { EXPERIENCES } from '../../constants';
 import type { Experience } from '../../types';
@@ -9,7 +9,7 @@ const TimelineItem: React.FC<{ experience: Experience; isLast: boolean }> = ({ e
   return (
     <div className="relative pl-32 pb-32">
       {!isLast && <div className="absolute left-[1.5px] top-5 h-full w-0.5 bg-overlay"></div>}
-      <motion.div
+      <m.div
         className="absolute left-[-7px] top-1 w-6 h-6 rounded-full bg-accent flex items-center justify-center"
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
@@ -17,8 +17,8 @@ const TimelineItem: React.FC<{ experience: Experience; isLast: boolean }> = ({ e
         transition={{ type: 'spring', stiffness: 300, duration: 0.2 }}
       >
         <div className="w-4 h-4 rounded-full bg-accent"/>
-      </motion.div>
-      <motion.div
+      </m.div>
+      <m.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
@@ -35,7 +35,7 @@ const TimelineItem: React.FC<{ experience: Experience; isLast: boolean }> = ({ e
             <li key={index}>{point}</li>
           ))}
         </ul>
-      </motion.div>
+      </m.div>
     </div>
   );
 };

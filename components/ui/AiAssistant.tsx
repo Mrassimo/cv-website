@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { m, AnimatePresence } from 'framer-motion';
 import { useGemini } from '../../hooks/useGemini';
 import { AiIcon, CloseIcon, SendIcon } from './Icons';
 
@@ -25,7 +25,7 @@ export const AiAssistant: React.FC = () => {
 
     return (
         <>
-            <motion.button
+            <m.button
                 onClick={() => setIsOpen(true)}
                 className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-accent rounded-full shadow-elevated flex items-center justify-center text-white hover:bg-accent-hover transition-colors"
                 whileHover={{ scale: 1.1 }}
@@ -33,11 +33,11 @@ export const AiAssistant: React.FC = () => {
                 aria-label="Open AI Assistant"
             >
                 <AiIcon className="w-8 h-8" />
-            </motion.button>
+            </m.button>
 
             <AnimatePresence>
                 {isOpen && (
-                    <motion.div
+                    <m.div
                         initial={{ opacity: 0, y: 50, scale: 0.9 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 50, scale: 0.9 }}
@@ -94,7 +94,7 @@ export const AiAssistant: React.FC = () => {
                                 </button>
                             </form>
                         </footer>
-                    </motion.div>
+                    </m.div>
                 )}
             </AnimatePresence>
         </>

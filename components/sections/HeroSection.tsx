@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { PERSONAL_INFO } from '../../constants';
 import { Section } from '../ui/Section';
 import { Button } from '../ui/button';
@@ -24,28 +24,28 @@ const itemVariants = {
 export const HeroSection = forwardRef<HTMLElement>((_, ref) => {
   return (
     <Section id="home" ref={ref} className="text-center bg-background">
-      <motion.div
+      <m.div
         className="flex flex-col items-center max-w-narrow mx-auto px-6"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
-        <motion.h1
+        <m.h1
           className="text-display font-bold tracking-tight text-primary mb-6"
           variants={itemVariants}
         >
           {PERSONAL_INFO.name}
-        </motion.h1>
-        <motion.h2
+        </m.h1>
+        <m.h2
           className="text-h2 font-semibold text-secondary mb-3"
           variants={itemVariants}
         >
           {PERSONAL_INFO.title}
-        </motion.h2>
-        <motion.p className="text-large text-secondary mb-12" variants={itemVariants}>
+        </m.h2>
+        <m.p className="text-large text-secondary mb-12" variants={itemVariants}>
           {PERSONAL_INFO.location} · {PERSONAL_INFO.citizen}
-        </motion.p>
-        <motion.div className="flex flex-wrap justify-center items-center gap-4" variants={itemVariants}>
+        </m.p>
+        <m.div className="flex flex-wrap justify-center items-center gap-4" variants={itemVariants}>
            <Button variant="default" size="lg" asChild>
              <a
                href={PERSONAL_INFO.linkedin}
@@ -72,8 +72,8 @@ export const HeroSection = forwardRef<HTMLElement>((_, ref) => {
                <span>GitHub</span>
              </a>
            </Button>
-        </motion.div>
-      </motion.div>
+        </m.div>
+      </m.div>
     </Section>
   );
 });

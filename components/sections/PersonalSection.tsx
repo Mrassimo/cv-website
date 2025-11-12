@@ -1,5 +1,5 @@
 import React, { forwardRef, useState, useEffect, useRef } from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Section } from '../ui/Section';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '../ui/card';
 
@@ -86,7 +86,7 @@ export const PersonalSection = forwardRef<HTMLElement>((_, ref) => {
         <h2 className="text-h2 text-primary text-center mb-8">Personal & Education</h2>
         <div className="h-1 w-24 bg-accent mx-auto mb-40"></div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-32">
-          <motion.div
+          <m.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.5 }}
@@ -94,8 +94,8 @@ export const PersonalSection = forwardRef<HTMLElement>((_, ref) => {
           >
             <h3 className="text-h3 text-accent mb-16">Personal Projects & Interests</h3>
             <TerminalText textLines={projectText} />
-          </motion.div>
-          <motion.div
+          </m.div>
+          <m.div
              initial={{ opacity: 0, x: 50 }}
              whileInView={{ opacity: 1, x: 0 }}
              viewport={{ once: true, amount: 0.5 }}
@@ -111,7 +111,7 @@ export const PersonalSection = forwardRef<HTMLElement>((_, ref) => {
                 <p className="text-body text-secondary">Focus: Statistics, Data Analysis, Psychology & Philosophy.</p>
               </CardContent>
             </Card>
-          </motion.div>
+          </m.div>
         </div>
       </div>
     </Section>

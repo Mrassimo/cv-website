@@ -1,6 +1,6 @@
 
 import React, { forwardRef } from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Section } from '../ui/Section';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Badge } from '../ui/badge';
@@ -25,7 +25,7 @@ const skillItemVariants = {
 const SkillCategoryCard: React.FC<{ item: SkillCategory }> = ({ item }) => {
   return (
     <Card asChild>
-      <motion.div
+      <m.div
         variants={categoryVariants}
         className="cursor-pointer"
         whileHover={{
@@ -36,25 +36,25 @@ const SkillCategoryCard: React.FC<{ item: SkillCategory }> = ({ item }) => {
           <CardTitle>{item.category}</CardTitle>
         </CardHeader>
         <CardContent>
-          <motion.div
+          <m.div
             className="flex flex-wrap gap-8"
             variants={containerVariants}
           >
             {item.skills.map(skill => (
               <Badge key={skill.name} variant="default" asChild>
-                <motion.div
+                <m.div
                   variants={skillItemVariants}
                   className="cursor-pointer"
                   whileHover={{ scale: 1.05 }}
                 >
                   <skill.icon className="w-5 h-5 text-accent" />
                   <span>{skill.name}</span>
-                </motion.div>
+                </m.div>
               </Badge>
             ))}
-          </motion.div>
+          </m.div>
         </CardContent>
-      </motion.div>
+      </m.div>
     </Card>
   );
 };
@@ -65,7 +65,7 @@ export const SkillsSection = forwardRef<HTMLElement>((_, ref) => {
       <div className="text-center w-full">
         <h2 className="text-h2 text-primary mb-8">Skills & Technologies</h2>
         <div className="h-1 w-24 bg-accent mx-auto mb-40"></div>
-        <motion.div
+        <m.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-32 w-full max-w-7xl mx-auto"
           initial="hidden"
           whileInView="visible"
@@ -75,7 +75,7 @@ export const SkillsSection = forwardRef<HTMLElement>((_, ref) => {
           {SKILLS.map((categoryItem) => (
              <SkillCategoryCard key={categoryItem.category} item={categoryItem} />
           ))}
-        </motion.div>
+        </m.div>
       </div>
     </Section>
   );

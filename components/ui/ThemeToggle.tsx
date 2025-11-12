@@ -2,7 +2,7 @@
 import React from 'react';
 import { useTheme } from '../../hooks/useTheme';
 import { SunIcon, MoonIcon } from './Icons';
-import { motion, AnimatePresence } from 'framer-motion';
+import { m, AnimatePresence } from 'framer-motion';
 
 export const ThemeToggle: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
@@ -14,7 +14,7 @@ export const ThemeToggle: React.FC = () => {
       aria-label="Toggle theme"
     >
       <AnimatePresence mode="wait" initial={false}>
-        <motion.div
+        <m.div
           key={theme}
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -22,7 +22,7 @@ export const ThemeToggle: React.FC = () => {
           transition={{ duration: 0.2 }}
         >
           {theme === 'light' ? <MoonIcon className="w-6 h-6" /> : <SunIcon className="w-6 h-6" />}
-        </motion.div>
+        </m.div>
       </AnimatePresence>
     </button>
   );

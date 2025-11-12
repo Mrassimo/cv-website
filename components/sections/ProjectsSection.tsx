@@ -1,6 +1,6 @@
 
 import React, { forwardRef } from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Section } from '../ui/Section';
 import { Card, CardContent } from '../ui/card';
 import { Badge } from '../ui/badge';
@@ -13,7 +13,7 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({ project, i
 
   return (
     <Card asChild>
-      <motion.div
+      <m.div
         className="overflow-hidden cursor-pointer"
         whileHover={{
           scale: 1.02,
@@ -56,7 +56,7 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({ project, i
             </div>
           </div>
         </CardContent>
-      </motion.div>
+      </m.div>
     </Card>
   );
 };
@@ -77,7 +77,7 @@ export const ProjectsSection = forwardRef<HTMLElement>((_, ref) => {
       <div className="text-center w-full">
         <h2 className="text-h2 text-primary mb-8">Key Projects & Innovations</h2>
         <div className="h-1 w-24 bg-accent mx-auto mb-40"></div>
-        <motion.div
+        <m.div
             className="w-full max-w-5xl mx-auto space-y-32"
             initial="hidden"
             whileInView="visible"
@@ -85,11 +85,11 @@ export const ProjectsSection = forwardRef<HTMLElement>((_, ref) => {
             variants={listVariants}
         >
           {PROJECTS.map((project, index) => (
-            <motion.div key={project.id} variants={itemVariants}>
+            <m.div key={project.id} variants={itemVariants}>
               <ProjectCard project={project} index={index} />
-            </motion.div>
+            </m.div>
           ))}
-        </motion.div>
+        </m.div>
       </div>
     </Section>
   );
