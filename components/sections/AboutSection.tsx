@@ -2,6 +2,7 @@
 import React, { forwardRef } from 'react';
 import { motion } from 'framer-motion';
 import { Section } from '../ui/Section';
+import { Card, CardContent } from '../ui/card';
 import { BlueprintIcon, LightbulbIcon, ShareIcon } from '../ui/Icons';
 
 const cardData = [
@@ -61,23 +62,26 @@ export const AboutSection = forwardRef<HTMLElement>((_, ref) => {
         viewport={{ once: true, amount: 0.5 }}
       >
         {cardData.map((card, i) => (
-          <motion.div
-            key={card.title}
-            custom={i}
-            variants={cardVariants}
-            className="flex flex-col sm:flex-row items-center gap-16 p-24 bg-white dark:bg-warm-cards rounded-card shadow-card backdrop-blur-sm border border-overlay transition-all duration-200"
-            whileHover={{
-              boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)'
-            }}
-          >
-            <div className="flex-shrink-0 w-16 h-16 bg-accent/10 text-accent rounded-full flex items-center justify-center">
-              <card.icon className="w-8 h-8"/>
-            </div>
-            <div className="text-center sm:text-left">
-              <h3 className="text-h3 text-primary dark:text-primary-dark">{card.title}</h3>
-              <p className="text-body text-secondary dark:text-secondary-dark mt-8">{card.text}</p>
-            </div>
-          </motion.div>
+          <Card key={card.title} asChild>
+            <motion.div
+              custom={i}
+              variants={cardVariants}
+              className="cursor-pointer"
+              whileHover={{
+                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)'
+              }}
+            >
+              <CardContent className="flex flex-col sm:flex-row items-center gap-16 p-24">
+                <div className="flex-shrink-0 w-16 h-16 bg-accent/10 text-accent rounded-full flex items-center justify-center">
+                  <card.icon className="w-8 h-8"/>
+                </div>
+                <div className="text-center sm:text-left">
+                  <h3 className="text-h3 text-primary dark:text-primary-dark">{card.title}</h3>
+                  <p className="text-body text-secondary dark:text-secondary-dark mt-8">{card.text}</p>
+                </div>
+              </CardContent>
+            </motion.div>
+          </Card>
         ))}
       </motion.div>
     </Section>

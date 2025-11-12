@@ -1,6 +1,7 @@
 import React, { forwardRef, useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Section } from '../ui/Section';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '../ui/card';
 
 const TerminalText: React.FC<{ textLines: string[] }> = ({ textLines }) => {
     const [displayedText, setDisplayedText] = useState('');
@@ -101,11 +102,15 @@ export const PersonalSection = forwardRef<HTMLElement>((_, ref) => {
              transition={{ duration: 0.2 }}
           >
             <h3 className="text-h3 text-accent mb-16">Education</h3>
-            <div className="bg-white dark:bg-warm-cards p-24 rounded-card shadow-card backdrop-blur-sm border border-overlay transition-all duration-200 hover:shadow-card-hover">
-              <h4 className="text-xl font-bold text-primary dark:text-primary-dark">Bachelor of Science</h4>
-              <p className="font-semibold text-body text-secondary dark:text-secondary-dark mt-8">University of Sydney</p>
-              <p className="mt-8 text-body text-secondary dark:text-secondary-dark">Focus: Statistics, Data Analysis, Psychology & Philosophy.</p>
-            </div>
+            <Card className="hover:shadow-card-hover">
+              <CardHeader>
+                <CardTitle className="text-xl">Bachelor of Science</CardTitle>
+                <CardDescription className="font-semibold mt-8">University of Sydney</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-body text-secondary dark:text-secondary-dark">Focus: Statistics, Data Analysis, Psychology & Philosophy.</p>
+              </CardContent>
+            </Card>
           </motion.div>
         </div>
       </div>

@@ -2,6 +2,7 @@ import React, { forwardRef, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { PERSONAL_INFO } from '../../constants';
 import { Section } from '../ui/Section';
+import { Button } from '../ui/button';
 import { ChevronDownIcon, GithubIcon, EnvelopeIcon, LinkedinIcon } from '../ui/Icons';
 
 const containerVariants = {
@@ -147,31 +148,32 @@ export const HeroSection = forwardRef<HTMLElement>((_, ref) => {
           {PERSONAL_INFO.location} &bull; {PERSONAL_INFO.citizen}
         </motion.p>
         <motion.div className="flex flex-wrap justify-center items-center gap-16" variants={itemVariants}>
-           <a
-             href={`mailto:${PERSONAL_INFO.email}`}
-             className="flex items-center gap-8 px-24 py-12 rounded-card bg-warm-cards dark:bg-warm-cards-dark hover:bg-warm-cards/80 dark:hover:bg-warm-cards-dark/80 transition-all duration-200 hover:shadow-card-hover text-primary dark:text-primary-dark font-semibold border border-overlay"
-           >
-             <EnvelopeIcon className="w-5 h-5" />
-             <span className="hidden sm:inline">{PERSONAL_INFO.email}</span>
-           </a>
-           <a
-             href={PERSONAL_INFO.linkedin}
-             target="_blank"
-             rel="noopener noreferrer"
-             className="flex items-center gap-8 px-24 py-12 rounded-card bg-accent text-white hover:bg-hover-accent transition-all duration-200 hover:shadow-card-hover font-semibold"
-           >
-             <LinkedinIcon className="w-5 h-5" />
-             <span className="hidden sm:inline">LinkedIn</span>
-           </a>
-           <a
-             href={PERSONAL_INFO.github}
-             target="_blank"
-             rel="noopener noreferrer"
-             className="flex items-center gap-8 px-24 py-12 rounded-card bg-warm-cards dark:bg-warm-cards-dark hover:bg-warm-cards/80 dark:hover:bg-warm-cards-dark/80 transition-all duration-200 hover:shadow-card-hover text-primary dark:text-primary-dark font-semibold border border-overlay"
-           >
-             <GithubIcon className="w-5 h-5" />
-             <span className="hidden sm:inline">GitHub</span>
-           </a>
+           <Button variant="secondary" asChild>
+             <a href={`mailto:${PERSONAL_INFO.email}`}>
+               <EnvelopeIcon className="w-5 h-5" />
+               <span className="hidden sm:inline">{PERSONAL_INFO.email}</span>
+             </a>
+           </Button>
+           <Button variant="default" asChild>
+             <a
+               href={PERSONAL_INFO.linkedin}
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <LinkedinIcon className="w-5 h-5" />
+               <span className="hidden sm:inline">LinkedIn</span>
+             </a>
+           </Button>
+           <Button variant="secondary" asChild>
+             <a
+               href={PERSONAL_INFO.github}
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <GithubIcon className="w-5 h-5" />
+               <span className="hidden sm:inline">GitHub</span>
+             </a>
+           </Button>
         </motion.div>
       </motion.div>
       <a href="#about" className="absolute bottom-8 z-10 animate-bounce">
