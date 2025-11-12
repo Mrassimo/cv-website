@@ -1,0 +1,631 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2025-01-15T00:00:00Z",
+  "categories": [
+    {
+      "id": "programming-languages",
+      "name": "Programming, Languages & Algorithms",
+      "description": "Core programming languages and computational techniques",
+      "order": 1,
+      "skills": [
+        {
+          "id": "sas-ecosystem",
+          "name": "SAS Ecosystem",
+          "proficiency": "expert",
+          "technologies": [
+            { "name": "SAS Viya", "category": "platform" },
+            { "name": "SAS 9.4", "category": "platform" },
+            { "name": "CAS", "category": "compute-engine" },
+            { "name": "Enterprise Guide", "category": "tool" },
+            { "name": "Visual Analytics", "category": "tool" },
+            { "name": "PROC SQL", "category": "language" },
+            { "name": "SAS Macros", "category": "language" },
+            { "name": "Data Quality", "category": "tool" }
+          ],
+          "experiences": [
+            {
+              "role_id": "hcf-senior-insights-analyst",
+              "company": "HCF",
+              "highlight": "SnowBridge SAS↔Snowflake integration achieving 400% performance improvement",
+              "timeframe": { "start": "2024-10", "end": null }
+            },
+            {
+              "role_id": "westpac-financial-crime",
+              "company": "Westpac Group",
+              "highlight": "Modular PROC SQL refactors reducing code complexity by 65%",
+              "timeframe": { "start": "2022-10", "end": "2024-07" }
+            },
+            {
+              "role_id": "medibank-senior-reporting",
+              "company": "Medibank Private",
+              "highlight": "99% runtime reduction (6 hours to 3 minutes) via optimized SAS PROC SQL",
+              "timeframe": { "start": "2022-02", "end": "2022-10" }
+            }
+          ],
+          "achievements": [
+            {
+              "description": "Built SnowBridge SAS↔Snowflake integration pattern",
+              "impact": "400% write-speed improvement for hybrid pipelines",
+              "metrics": [
+                { "type": "performance", "value": "400%", "context": "write-speed improvement" },
+                { "type": "test_coverage", "value": "50+", "context": "test cases for validation" }
+              ]
+            },
+            {
+              "description": "Re-architected SAS PROC SQL reporting stack",
+              "impact": "99% faster reporting (6 hours → 3 minutes)",
+              "metrics": [
+                { "type": "performance", "value": "99%", "context": "runtime reduction" },
+                { "type": "time", "value": "6h → 3m", "context": "processing time" }
+              ]
+            },
+            {
+              "description": "Led enterprise SAS 9.4→Viya migrations",
+              "impact": "Readiness assessments for regulated workloads"
+            }
+          ],
+          "keywords": [
+            "sas", "sas viya", "proc sql", "macros", "enterprise guide",
+            "visual analytics", "cas", "data quality", "sas programming",
+            "migration", "performance optimization"
+          ],
+          "last_used": "2025-01-15",
+          "years_experience": 8
+        },
+        {
+          "id": "sql-mastery",
+          "name": "SQL Mastery",
+          "proficiency": "expert",
+          "technologies": [
+            { "name": "Snowflake", "category": "platform" },
+            { "name": "Snowpark", "category": "framework" },
+            { "name": "Streams/Tasks", "category": "feature" },
+            { "name": "Teradata", "category": "platform" },
+            { "name": "PostgreSQL", "category": "platform" },
+            { "name": "SQL Server", "category": "platform" },
+            { "name": "MySQL", "category": "platform" },
+            { "name": "Oracle", "category": "platform" },
+            { "name": "DuckDB", "category": "platform" },
+            { "name": "BigQuery", "category": "platform" },
+            { "name": "Redshift", "category": "platform" }
+          ],
+          "experiences": [
+            {
+              "role_id": "hcf-senior-insights-analyst",
+              "company": "HCF",
+              "highlight": "Snowflake Snowpark/Streams/Tasks for 1M+ SCD2 records",
+              "timeframe": { "start": "2024-10", "end": null }
+            },
+            {
+              "role_id": "westpac-financial-crime",
+              "company": "Westpac Group",
+              "highlight": "35% reduction in data processing time through advanced SQL optimization",
+              "timeframe": { "start": "2022-10", "end": "2024-07" }
+            },
+            {
+              "role_id": "cba-senior-data-specialist",
+              "company": "Commonwealth Bank",
+              "highlight": "Managed Teradata to cloud migration with zero data loss",
+              "timeframe": { "start": "2020-09", "end": "2021-11" }
+            }
+          ],
+          "achievements": [
+            {
+              "description": "Expert window functions, CTEs, QUALIFY/RANK deduping, recursive queries",
+              "impact": "Built 50+ test cases for SnowBridge hybrid pipelines"
+            },
+            {
+              "description": "Achieved 35% data processing time reduction",
+              "impact": "Advanced SQL optimisation techniques",
+              "metrics": [
+                { "type": "performance", "value": "35%", "context": "processing time reduction" }
+              ]
+            },
+            {
+              "description": "Managed petabyte-scale Teradata to cloud migration",
+              "impact": "Zero data loss during migration",
+              "metrics": [
+                { "type": "scale", "value": "500GB+", "context": "data domains migrated" }
+              ]
+            }
+          ],
+          "keywords": [
+            "sql", "snowflake", "snowpark", "teradata", "postgresql",
+            "window functions", "cte", "query optimization", "data migration",
+            "bigquery", "redshift", "duckdb"
+          ],
+          "last_used": "2025-01-15",
+          "years_experience": 10
+        },
+        {
+          "id": "python-scientific-stack",
+          "name": "Python & Scientific Stack",
+          "proficiency": "expert",
+          "technologies": [
+            { "name": "Pandas", "category": "library" },
+            { "name": "Polars", "category": "library" },
+            { "name": "NumPy", "category": "library" },
+            { "name": "scikit-learn", "category": "framework" },
+            { "name": "TensorFlow", "category": "framework" },
+            { "name": "Pydantic", "category": "library" },
+            { "name": "dlt", "category": "tool" }
+          ],
+          "experiences": [
+            {
+              "role_id": "hcf-senior-insights-analyst",
+              "company": "HCF",
+              "highlight": "Built geocoding framework processing 3.17M+ records with 92.4% accuracy",
+              "timeframe": { "start": "2024-10", "end": null }
+            },
+            {
+              "role_id": "westpac-financial-crime",
+              "company": "Westpac Group",
+              "highlight": "ML feature engineering for fraud detection pipelines",
+              "timeframe": { "start": "2022-10", "end": "2024-07" }
+            }
+          ],
+          "achievements": [
+            {
+              "description": "Custom geocoding framework with Jaro-Winkler and Levenshtein distance",
+              "impact": "92.4% match rate on complex Australian addresses",
+              "metrics": [
+                { "type": "scale", "value": "3.17M+", "context": "records processed" },
+                { "type": "performance", "value": "92.4%", "context": "match accuracy" }
+              ]
+            },
+            {
+              "description": "Pydantic validation framework for data contracts",
+              "impact": "Zero schema drift incidents in production"
+            },
+            {
+              "description": "ML pipelines for fraud detection",
+              "impact": "Feature engineering and model deployment"
+            }
+          ],
+          "keywords": [
+            "python", "pandas", "polars", "numpy", "scikit-learn",
+            "tensorflow", "machine learning", "data processing",
+            "feature engineering", "pydantic", "validation"
+          ],
+          "last_used": "2025-01-15",
+          "years_experience": 8
+        }
+      ]
+    },
+    {
+      "id": "data-platforms",
+      "name": "Data Platforms & Architecture",
+      "description": "Modern and legacy data platforms, warehousing, and architecture patterns",
+      "order": 2,
+      "skills": [
+        {
+          "id": "modern-data-stack",
+          "name": "Modern Data Stack",
+          "proficiency": "expert",
+          "technologies": [
+            { "name": "Snowflake", "category": "platform" },
+            { "name": "dbt", "category": "framework" },
+            { "name": "Apache Airflow", "category": "orchestration" },
+            { "name": "dlt", "category": "ingestion" },
+            { "name": "DuckDB", "category": "database" },
+            { "name": "Polars", "category": "processing" },
+            { "name": "BigQuery", "category": "platform" }
+          ],
+          "experiences": [
+            {
+              "role_id": "hcf-senior-insights-analyst",
+              "company": "HCF",
+              "highlight": "Built Data Vault 2.0 layer with 1M+ historical records",
+              "timeframe": { "start": "2024-10", "end": null }
+            }
+          ],
+          "achievements": [
+            {
+              "description": "Implemented Data Vault 2.0 with Type 2 SCD for 1M+ provider agreements",
+              "impact": "Multi-layer validation and audit-friendly documentation",
+              "metrics": [
+                { "type": "scale", "value": "1M+", "context": "historical records" }
+              ]
+            },
+            {
+              "description": "Built dbt + Airflow orchestration with Pydantic data contracts",
+              "impact": "Schema drift protection for cross-cloud ingestion"
+            }
+          ],
+          "keywords": [
+            "snowflake", "dbt", "airflow", "data vault", "type 2 scd",
+            "modern data stack", "duckdb", "polars", "bigquery",
+            "data contracts", "orchestration"
+          ],
+          "last_used": "2025-01-15",
+          "years_experience": 5
+        },
+        {
+          "id": "data-quality-engineering",
+          "name": "Data Quality Engineering",
+          "proficiency": "expert",
+          "technologies": [
+            { "name": "Automated Testing", "category": "practice" },
+            { "name": "Pydantic", "category": "library" },
+            { "name": "Great Expectations", "category": "framework" },
+            { "name": "Data Contracts", "category": "pattern" }
+          ],
+          "experiences": [
+            {
+              "role_id": "hcf-senior-insights-analyst",
+              "company": "HCF",
+              "highlight": "Built 50+ regression tests and 60+ UAT scenarios",
+              "timeframe": { "start": "2024-10", "end": null }
+            },
+            {
+              "role_id": "medibank-senior-reporting",
+              "company": "Medibank Private",
+              "highlight": "Ensured 100% data integrity with automated validation frameworks",
+              "timeframe": { "start": "2022-02", "end": "2022-10" }
+            }
+          ],
+          "achievements": [
+            {
+              "description": "Automated validation harnesses",
+              "impact": "50+ regression tests, 60+ UAT scenarios",
+              "metrics": [
+                { "type": "test_coverage", "value": "50+", "context": "regression tests" },
+                { "type": "test_coverage", "value": "60+", "context": "UAT scenarios" }
+              ]
+            },
+            {
+              "description": "Data Quality firebreaks and anomaly detection",
+              "impact": "100% data integrity in production"
+            }
+          ],
+          "keywords": [
+            "data quality", "testing", "validation", "pydantic",
+            "regression tests", "uat", "data contracts",
+            "automated testing", "quality engineering"
+          ],
+          "last_used": "2025-01-15",
+          "years_experience": 7
+        }
+      ]
+    },
+    {
+      "id": "ai-ml-analytics",
+      "name": "AI, Analytics & Machine Learning",
+      "description": "AI/LLM engineering, machine learning, and advanced analytics",
+      "order": 3,
+      "skills": [
+        {
+          "id": "ai-llm-engineering",
+          "name": "AI/LLM Engineering",
+          "proficiency": "advanced",
+          "technologies": [
+            { "name": "Model Context Protocol", "category": "framework" },
+            { "name": "RAG", "category": "pattern" },
+            { "name": "Vector Databases", "category": "platform" },
+            { "name": "LangChain", "category": "framework" },
+            { "name": "Hugging Face", "category": "platform" },
+            { "name": "Claude", "category": "llm" },
+            { "name": "Gemini", "category": "llm" },
+            { "name": "Ollama", "category": "tool" }
+          ],
+          "experiences": [
+            {
+              "role_id": "westpac-financial-crime",
+              "company": "Westpac Group",
+              "highlight": "Built secure offline RAG platform for AML document intelligence",
+              "timeframe": { "start": "2022-10", "end": "2024-07" }
+            }
+          ],
+          "achievements": [
+            {
+              "description": "Secure offline RAG platform with zero-data-egress compliance",
+              "impact": "Enabled natural language business querying for 100+ stakeholders",
+              "metrics": [
+                { "type": "scale", "value": "50K+", "context": "lines of code embedded" },
+                { "type": "performance", "value": "30%", "context": "detection accuracy improvement" }
+              ]
+            },
+            {
+              "description": "Model Context Protocol (MCP) server implementation",
+              "impact": "AI pair-programming with semantic code intelligence"
+            },
+            {
+              "description": "Vector embeddings over 50K+ code lines",
+              "impact": "Semantic search and context retrieval"
+            }
+          ],
+          "keywords": [
+            "ai", "llm", "rag", "vector database", "langchain",
+            "semantic search", "embeddings", "mcp", "claude",
+            "gemini", "prompt engineering", "context engineering"
+          ],
+          "last_used": "2025-01-15",
+          "years_experience": 3
+        },
+        {
+          "id": "machine-learning",
+          "name": "Machine Learning & Advanced Analytics",
+          "proficiency": "advanced",
+          "technologies": [
+            { "name": "scikit-learn", "category": "framework" },
+            { "name": "TensorFlow", "category": "framework" },
+            { "name": "Feature Engineering", "category": "practice" },
+            { "name": "Docker", "category": "tool" },
+            { "name": "Kubernetes", "category": "platform" }
+          ],
+          "experiences": [
+            {
+              "role_id": "westpac-financial-crime",
+              "company": "Westpac Group",
+              "highlight": "ML feature engineering for fraud detection achieving 30% accuracy improvement",
+              "timeframe": { "start": "2022-10", "end": "2024-07" }
+            }
+          ],
+          "achievements": [
+            {
+              "description": "Fraud detection ML pipeline deployment",
+              "impact": "30% improvement in detection accuracy",
+              "metrics": [
+                { "type": "performance", "value": "30%", "context": "accuracy improvement" }
+              ]
+            },
+            {
+              "description": "Feature engineering for financial crime detection",
+              "impact": "Supervised/unsupervised modelling pipelines"
+            }
+          ],
+          "keywords": [
+            "machine learning", "feature engineering", "tensorflow",
+            "scikit-learn", "fraud detection", "predictive analytics",
+            "supervised learning", "unsupervised learning"
+          ],
+          "last_used": "2024-07",
+          "years_experience": 5
+        },
+        {
+          "id": "business-intelligence",
+          "name": "Business Intelligence & Visualization",
+          "proficiency": "expert",
+          "technologies": [
+            { "name": "Tableau", "category": "platform" },
+            { "name": "Power BI", "category": "platform" },
+            { "name": "Looker", "category": "platform" },
+            { "name": "SAS Visual Analytics", "category": "platform" },
+            { "name": "DAX", "category": "language" },
+            { "name": "Excel", "category": "tool" }
+          ],
+          "experiences": [
+            {
+              "role_id": "hcf-senior-insights-analyst",
+              "company": "HCF",
+              "highlight": "Executive dashboards for 100+ product teams",
+              "timeframe": { "start": "2024-10", "end": null }
+            },
+            {
+              "role_id": "ndia-bi-lead",
+              "company": "NDIA",
+              "highlight": "National disability program reporting and KPI suites",
+              "timeframe": { "start": "2017-03", "end": "2020-09" }
+            }
+          ],
+          "achievements": [
+            {
+              "description": "Executive dashboard design and KPI suites",
+              "impact": "100+ stakeholder presentations across actuarial, finance, operations"
+            },
+            {
+              "description": "Power BI data analyst certification",
+              "impact": "DAX, data modelling, performance optimization (70%+ load improvements)"
+            }
+          ],
+          "keywords": [
+            "tableau", "power bi", "looker", "dax", "data visualization",
+            "dashboards", "kpi", "executive reporting", "bi",
+            "visual analytics", "storytelling"
+          ],
+          "last_used": "2025-01-15",
+          "years_experience": 10
+        }
+      ]
+    },
+    {
+      "id": "cloud-devops",
+      "name": "Cloud, DevOps & Automation",
+      "description": "Cloud platforms, infrastructure, DevOps practices, and automation",
+      "order": 4,
+      "skills": [
+        {
+          "id": "cloud-platforms",
+          "name": "Cloud Platforms",
+          "proficiency": "advanced",
+          "technologies": [
+            { "name": "AWS", "category": "platform" },
+            { "name": "Azure", "category": "platform" },
+            { "name": "Google Cloud", "category": "platform" },
+            { "name": "S3", "category": "service" },
+            { "name": "Lambda", "category": "service" },
+            { "name": "Glue", "category": "service" },
+            { "name": "Data Factory", "category": "service" }
+          ],
+          "experiences": [
+            {
+              "role_id": "hcf-senior-insights-analyst",
+              "company": "HCF",
+              "highlight": "Cloud-native AWS frameworks reducing ad-hoc requests by 20%",
+              "timeframe": { "start": "2024-10", "end": null }
+            },
+            {
+              "role_id": "cba-senior-data-specialist",
+              "company": "Commonwealth Bank",
+              "highlight": "Teradata to cloud migration for 500GB+ domains",
+              "timeframe": { "start": "2020-09", "end": "2021-11" }
+            }
+          ],
+          "achievements": [
+            {
+              "description": "Cloud-native AWS frameworks for self-service analytics",
+              "impact": "20% reduction in ad-hoc requests",
+              "metrics": [
+                { "type": "performance", "value": "20%", "context": "reduction in ad-hoc requests" }
+              ]
+            },
+            {
+              "description": "Managed cloud migration with hybrid on-prem/cloud security",
+              "impact": "Zero data loss during petabyte-scale migration"
+            }
+          ],
+          "keywords": [
+            "aws", "azure", "gcp", "cloud migration", "s3", "lambda",
+            "glue", "data factory", "cloud native", "hybrid cloud"
+          ],
+          "last_used": "2025-01-15",
+          "years_experience": 6
+        },
+        {
+          "id": "devops-automation",
+          "name": "DevOps & Automation",
+          "proficiency": "advanced",
+          "technologies": [
+            { "name": "Docker", "category": "platform" },
+            { "name": "Kubernetes", "category": "platform" },
+            { "name": "Git", "category": "tool" },
+            { "name": "CI/CD", "category": "practice" },
+            { "name": "Jenkins", "category": "tool" },
+            { "name": "Bamboo", "category": "tool" },
+            { "name": "PowerShell", "category": "language" },
+            { "name": "Bash", "category": "language" }
+          ],
+          "experiences": [
+            {
+              "role_id": "ndia-bi-lead",
+              "company": "NDIA",
+              "highlight": "PowerShell orchestration for SAS job control and automation",
+              "timeframe": { "start": "2017-03", "end": "2020-09" }
+            }
+          ],
+          "achievements": [
+            {
+              "description": "Docker/Kubernetes infrastructure including Raspberry Pi lab cluster",
+              "impact": "Microservices and event-driven design patterns"
+            },
+            {
+              "description": "CI/CD pipelines with versioned SQL/SAS deploys",
+              "impact": "Infrastructure-as-code for analytics environments"
+            },
+            {
+              "description": "Achieved multiple innovation awards for automation",
+              "impact": "60% improvement in reporting speed through pipeline automation"
+            }
+          ],
+          "keywords": [
+            "docker", "kubernetes", "ci/cd", "git", "automation",
+            "jenkins", "powershell", "bash", "infrastructure as code",
+            "devops", "orchestration"
+          ],
+          "last_used": "2025-01-15",
+          "years_experience": 7
+        }
+      ]
+    },
+    {
+      "id": "domain-expertise",
+      "name": "Domain & Industry Expertise",
+      "description": "Industry-specific knowledge and domain expertise",
+      "order": 5,
+      "skills": [
+        {
+          "id": "financial-services",
+          "name": "Financial Services",
+          "proficiency": "expert",
+          "technologies": [
+            { "name": "AML/CTF", "category": "domain" },
+            { "name": "AUSTRAC", "category": "regulatory" },
+            { "name": "Basel III", "category": "framework" },
+            { "name": "Credit Risk", "category": "domain" },
+            { "name": "Fraud Detection", "category": "domain" }
+          ],
+          "experiences": [
+            {
+              "role_id": "westpac-financial-crime",
+              "company": "Westpac Group",
+              "highlight": "AUSTRAC submissions processing 2M+ transactions/day",
+              "timeframe": { "start": "2022-10", "end": "2024-07" }
+            },
+            {
+              "role_id": "cba-senior-data-specialist",
+              "company": "Commonwealth Bank",
+              "highlight": "Credit risk modelling and Basel III impact analysis",
+              "timeframe": { "start": "2020-09", "end": "2021-11" }
+            }
+          ],
+          "achievements": [
+            {
+              "description": "AUSTRAC/AML-CTF regulatory submissions",
+              "impact": "Transaction monitoring for 2M+ daily transactions",
+              "metrics": [
+                { "type": "scale", "value": "2M+", "context": "transactions per day" }
+              ]
+            },
+            {
+              "description": "Fraud detection ML pipelines",
+              "impact": "30% improvement in detection accuracy"
+            }
+          ],
+          "keywords": [
+            "financial services", "aml", "ctf", "austrac", "basel iii",
+            "credit risk", "fraud detection", "transaction monitoring",
+            "regulatory compliance", "financial crime"
+          ],
+          "last_used": "2024-07",
+          "years_experience": 4
+        },
+        {
+          "id": "healthcare-insurance",
+          "name": "Healthcare & Insurance",
+          "proficiency": "expert",
+          "technologies": [
+            { "name": "PHI/PII", "category": "compliance" },
+            { "name": "Provider Networks", "category": "domain" },
+            { "name": "Actuarial Reporting", "category": "domain" },
+            { "name": "Geocoding", "category": "technical" }
+          ],
+          "experiences": [
+            {
+              "role_id": "hcf-senior-insights-analyst",
+              "company": "HCF",
+              "highlight": "3.17M+ customer records into business-friendly geographic intelligence",
+              "timeframe": { "start": "2024-10", "end": null }
+            },
+            {
+              "role_id": "medibank-senior-reporting",
+              "company": "Medibank Private",
+              "highlight": "Critical reporting suite with 100% data integrity",
+              "timeframe": { "start": "2022-02", "end": "2022-10" }
+            }
+          ],
+          "achievements": [
+            {
+              "description": "Provider network analytics with geocoding",
+              "impact": "Enabled $2M+ in network expansion projects",
+              "metrics": [
+                { "type": "cost", "value": "$2M+", "context": "network expansion enabled" },
+                { "type": "scale", "value": "3.17M", "context": "customer records processed" }
+              ]
+            },
+            {
+              "description": "PHI/PII compliance frameworks",
+              "impact": "100% data integrity with automated validation"
+            }
+          ],
+          "keywords": [
+            "healthcare", "insurance", "phi", "pii", "provider networks",
+            "actuarial", "geocoding", "network expansion",
+            "health data", "compliance"
+          ],
+          "last_used": "2025-01-15",
+          "years_experience": 3
+        }
+      ]
+    }
+  ]
+}

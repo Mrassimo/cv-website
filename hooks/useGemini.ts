@@ -1,5 +1,6 @@
 import { useState, useRef, useCallback } from 'react';
 import { getFullPortfolioText } from '../constants';
+import { searchSkillsSemantic, isSkillQuery, buildSkillContext } from '../utils/skillSearch';
 
 // Define message structure
 interface ChatMessage {
@@ -56,14 +57,30 @@ export const useGemini = () => {
 
     try {
       const portfolioContext = getFullPortfolioText();
+
+      // Check if query is skill-related and add skill context if needed
+      let skillContext = '';
+      if (isSkillQuery(prompt)) {
+        try {
+          const skillResults = await searchSkillsSemantic(prompt, 5);
+          if (skillResults.length > 0) {
+            skillContext = buildSkillContext(skillResults);
+          }
+        } catch (skillError) {
+          console.warn('Failed to search skills:', skillError);
+          // Continue without skill context if search fails
+        }
+      }
+
       const fullPrompt = `You are a helpful and professional AI assistant for Massimo Raso's portfolio. Your goal is to answer questions based *only* on the provided context about his skills, experience, and projects. Do not invent information. If a question cannot be answered from the context, politely state that the information is not in the portfolio. Keep your answers concise and relevant.
-      
+
       --- PORTFOLIO CONTEXT ---
       ${portfolioContext}
-      
+      ${skillContext ? `\n${skillContext}` : ''}
+
       --- USER QUESTION ---
       ${prompt}`;
-      
+
       const response = await aiClient.current.models.generateContent({
         model: 'gemini-2.5-flash',
         contents: fullPrompt,

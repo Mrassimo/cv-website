@@ -7,6 +7,7 @@ import { AboutSection } from './components/sections/AboutSection';
 import { AspirationsSection } from './components/sections/AspirationsSection';
 import { ProjectsSection } from './components/sections/ProjectsSection';
 import { SkillsSection } from './components/sections/SkillsSection';
+import { ExpertiseSection } from './components/sections/ExpertiseSection';
 import { ExperienceSection } from './components/sections/ExperienceSection';
 import { PersonalSection } from './components/sections/PersonalSection';
 import { ContactSection } from './components/sections/ContactSection';
@@ -76,9 +77,10 @@ const App: React.FC = () => {
         <AspirationsSection ref={(el) => { sectionRefs.current[2] = el; }} />
         <ProjectsSection ref={(el) => { sectionRefs.current[3] = el; }} />
         <SkillsSection ref={(el) => { sectionRefs.current[4] = el; }} />
-        <ExperienceSection ref={(el) => { sectionRefs.current[5] = el; }} />
-        <PersonalSection ref={(el) => { sectionRefs.current[6] = el; }} />
-        <ContactSection ref={(el) => { sectionRefs.current[7] = el; }} />
+        <ExpertiseSection ref={(el) => { sectionRefs.current[5] = el; }} />
+        <ExperienceSection ref={(el) => { sectionRefs.current[6] = el; }} />
+        <PersonalSection ref={(el) => { sectionRefs.current[7] = el; }} />
+        <ContactSection ref={(el) => { sectionRefs.current[8] = el; }} />
         </main>
         <AiAssistant />
       </div>
