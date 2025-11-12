@@ -1,0 +1,370 @@
+{
+  "schema_version": "1.1",
+  "generated_at": "2025-02-15",
+  "source_document": "data-analyst-general/MassimoRasoCV2025.pdf",
+  "roles": [
+    {
+      "role_id": "hcf_2024_business_insights",
+      "title": "Senior Business Insights Analyst",
+      "company": "HCF Health Insurance",
+      "location": "Sydney, NSW",
+      "timeframe": {
+        "start": "2024-10",
+        "end": null
+      },
+      "summary": "Leads the cloud-modernisation of HCF’s analytics stack, delivering SAS Viya migration, geocoding accuracy breakthroughs, and Data Vault governance for 2M+ member operations.",
+      "core_tech": [
+        "SAS Viya",
+        "Python",
+        "SQL",
+        "Snowflake",
+        "Data Vault 2.0",
+        "JIRA"
+      ],
+      "highlights": [
+        {
+          "description": "Directed the on-prem to SAS Viya migration covering actuarial, finance, and operations teams, enabling Python integrations while protecting 2M+ member workflows.",
+          "source": {
+            "path": "data-analyst-general/MassimoRasoCV2025.pdf",
+            "page": 1,
+            "section": "Enterprise Cloud Migration Leadership"
+          }
+        },
+        {
+          "description": "Architected a Python/SQL geocoding solution using four-stage Jaro-Winkler matching to raise address accuracy from 12% to 92.4% across 3.17M records.",
+          "source": {
+            "path": "data-analyst-general/MassimoRasoCV2025.pdf",
+            "page": 1,
+            "section": "Advanced Geocoding Solution"
+          }
+        },
+        {
+          "description": "Achieved 400% write-speed gains for 1M+ provider agreements by optimising cross-platform data exchange and pipeline design.",
+          "source": {
+            "path": "data-analyst-general/MassimoRasoCV2025.pdf",
+            "page": 1,
+            "section": "Performance Engineering"
+          }
+        },
+        {
+          "description": "Implemented Data Vault 2.0/SCD2 governance with full audit trails to remediate legacy quality issues.",
+          "source": {
+            "path": "data-analyst-general/MassimoRasoCV2025.pdf",
+            "page": 1,
+            "section": "Data Governance Implementation"
+          }
+        },
+        {
+          "description": "Designed 60+ UAT scenarios and JIRA-backed consultation workflows that kept migration testing disruption-free.",
+          "source": {
+            "path": "data-analyst-general/MassimoRasoCV2025.pdf",
+            "page": 1,
+            "section": "Testing & Quality Assurance"
+          }
+        },
+        {
+          "description": "Partnered with strategy teams on 15+ cross-business optimisation opportunities that unlocked $2M+ network expansion decisions.",
+          "source": {
+            "path": "analytics-engineering/cover-letter-woolworths-senior-ae.md",
+            "line": 24
+          }
+        },
+        {
+          "description": "Delivered self-service analytics and dashboards supporting 100+ concurrent business stakeholders.",
+          "source": {
+            "path": "analytics-engineering/cover-letter-woolworths-senior-ae.md",
+            "line": 26
+          }
+        },
+        {
+          "description": "Applied ML forecasting techniques to improve predictive accuracy on marketplace metrics by 30%.",
+          "source": {
+            "path": "analytics-engineering/cover-letter-woolworths-senior-ae.md",
+            "line": 30
+          }
+        }
+      ]
+    },
+    {
+      "role_id": "westpac_2022_financial_crime",
+      "title": "Financial Crime Consultant",
+      "company": "Westpac Group",
+      "location": "Sydney, NSW",
+      "timeframe": {
+        "start": "2022-10",
+        "end": "2024-07"
+      },
+      "summary": "Modernised Westpac’s financial-crime analytics estate with Databricks-ready codebases, RAG automation, and AUSTRAC-aligned ML pipelines.",
+      "core_tech": [
+        "Python",
+        "SQL",
+        "SAS",
+        "Databricks",
+        "Large Language Models"
+      ],
+      "highlights": [
+        {
+          "description": "Refactored 40% of the SQL detection estate into a unified framework processing 2M+ transactions daily for AUSTRAC compliance.",
+          "source": {
+            "path": "data-analyst-general/MassimoRasoCV2025.pdf",
+            "page": 1,
+            "section": "Large-Scale Code Refactoring"
+          }
+        },
+        {
+          "description": "Built an offline RAG platform that cut manual policy review effort by 75% through real-time compliance interpretation.",
+          "source": {
+            "path": "data-analyst-general/MassimoRasoCV2025.pdf",
+            "page": 1,
+            "section": "RAG/LLM Platform Development"
+          }
+        },
+        {
+          "description": "Developed unsupervised ML models for financial-crime pattern detection aligned to AUSTRAC guidelines.",
+          "source": {
+            "path": "data-analyst-general/MassimoRasoCV2025.pdf",
+            "page": 1,
+            "section": "Machine Learning Innovation"
+          }
+        },
+        {
+          "description": "Modernised 50,000+ lines of legacy code into modular, cloud-ready packages to streamline migration readiness and reduce maintenance.",
+          "source": {
+            "path": "data-analyst-general/MassimoRasoCV2025.pdf",
+            "page": 1,
+            "section": "Legacy System Modernisation"
+          }
+        },
+        {
+          "description": "Handled 2M+ daily transactions across AML detection pipelines while maintaining AUSTRAC compliance.",
+          "source": {
+            "path": "supporting-materials/cover-letter-westpac-unite.md",
+            "line": 28
+          }
+        },
+        {
+          "description": "Presented AI-enabled risk analytics to 100+ senior stakeholders including the GM of Risk, reinforcing executive sponsorship.",
+          "source": {
+            "path": "supporting-materials/cover-letter-westpac-unite.md",
+            "line": 32
+          }
+        },
+        {
+          "description": "Aligned SAS Viya adoption with Westpac’s Azure consolidation roadmap using prior large-scale migration experience.",
+          "source": {
+            "path": "supporting-materials/cover-letter-westpac-unite.md",
+            "line": 30
+          }
+        },
+        {
+          "description": "Built ML fraud detection systems handling $300M+ exposure while pioneering AI adoption inside financial crime teams.",
+          "source": {
+            "path": "supporting-materials/linkedin-optimization.md",
+            "line": 27
+          }
+        }
+      ]
+    },
+    {
+      "role_id": "medibank_2022_reporting",
+      "title": "Senior Reporting Analyst",
+      "company": "Medibank Private",
+      "location": "Remote / Melbourne, Australia",
+      "timeframe": {
+        "start": "2022-02",
+        "end": "2022-10"
+      },
+      "summary": "Re-engineered Medibank’s SAS/SQL reporting stack for extreme performance gains, automation, and reliable deployment practices.",
+      "core_tech": [
+        "SAS",
+        "SQL Server",
+        "Git"
+      ],
+      "highlights": [
+        {
+          "description": "Delivered 99% faster runtimes (6h → 3m) by eliminating Cartesian joins and applying indexing strategies to critical procedures.",
+          "source": {
+            "path": "data-analyst-general/MassimoRasoCV2025.pdf",
+            "page": 2,
+            "section": "Dramatic Performance Optimisation"
+          }
+        },
+        {
+          "description": "Automated 20+ weekly manual hours via resilient SAS macros with logging and error handling.",
+          "source": {
+            "path": "data-analyst-general/MassimoRasoCV2025.pdf",
+            "page": 2,
+            "section": "Advanced SAS Automation"
+          }
+        },
+        {
+          "description": "Redesigned complex SQL procedures into modular, migration-ready code for future scalability.",
+          "source": {
+            "path": "data-analyst-general/MassimoRasoCV2025.pdf",
+            "page": 2,
+            "section": "Complex Procedure Redesign"
+          }
+        },
+        {
+          "description": "Introduced Git-based deployments and validation frameworks to protect data integrity during migrations.",
+          "source": {
+            "path": "data-analyst-general/MassimoRasoCV2025.pdf",
+            "page": 2,
+            "section": "Version Control & Deployment"
+          }
+        }
+      ]
+    },
+    {
+      "role_id": "cba_2020_senior_data_specialist",
+      "title": "Senior Data Specialist",
+      "company": "Commonwealth Bank",
+      "location": "Sydney, NSW",
+      "timeframe": {
+        "start": "2020-09",
+        "end": "2021-11"
+      },
+      "summary": "Core contributor to petabyte-scale Teradata-to-cloud migration, automating ETL, integration, and knowledge transfer for business banking analytics.",
+      "core_tech": [
+        "Teradata",
+        "SQL",
+        "Alteryx",
+        "AWS"
+      ],
+      "highlights": [
+        {
+          "description": "Redesigned ETL for modern cloud architecture, safeguarding performance and data integrity across 500+ GB datasets.",
+          "source": {
+            "path": "data-analyst-general/MassimoRasoCV2025.pdf",
+            "page": 2,
+            "section": "Led Critical Petabyte-Scale Migration"
+          }
+        },
+        {
+          "description": "Automated data modelling workflows with SQL and Alteryx, saving 20+ hours weekly for business banking analytics.",
+          "source": {
+            "path": "data-analyst-general/MassimoRasoCV2025.pdf",
+            "page": 2,
+            "section": "Automated Data Modelling Workflows"
+          }
+        },
+        {
+          "description": "Built integration bridges between legacy mainframes and cloud platforms to maintain business continuity.",
+          "source": {
+            "path": "data-analyst-general/MassimoRasoCV2025.pdf",
+            "page": 2,
+            "section": "Data Integration Solutions"
+          }
+        },
+        {
+          "description": "Ran technical workshops and produced documentation that institutionalised migration best practices.",
+          "source": {
+            "path": "data-analyst-general/MassimoRasoCV2025.pdf",
+            "page": 2,
+            "section": "Technical Training & Documentation"
+          }
+        },
+        {
+          "description": "Led SAS-to-cloud migration initiatives with zero business disruption during cutover windows.",
+          "source": {
+            "path": "supporting-materials/linkedin-optimization.md",
+            "line": 28
+          }
+        }
+      ]
+    },
+    {
+      "role_id": "ndia_2017_data_analyst",
+      "title": "Data Analyst & BI Analyst",
+      "company": "National Disability Insurance Agency",
+      "location": "Sydney, NSW",
+      "timeframe": {
+        "start": "2017-03",
+        "end": "2020-09"
+      },
+      "summary": "Led NDIA analytics automation, governance, and mentoring efforts, replacing manual reporting with SAS/PowerShell frameworks adopted agency-wide.",
+      "core_tech": [
+        "SAS",
+        "SQL Server",
+        "PowerShell"
+      ],
+      "highlights": [
+        {
+          "description": "Managed BI team delivering national reporting, cutting turnaround by 60% and saving 4+ hours daily through automation.",
+          "source": {
+            "path": "data-analyst-general/MassimoRasoCV2025.pdf",
+            "page": 2,
+            "section": "Analytics Team Leadership"
+          }
+        },
+        {
+          "description": "Developed macro and PowerShell frameworks for orchestration and programming standards.",
+          "source": {
+            "path": "data-analyst-general/MassimoRasoCV2025.pdf",
+            "page": 2,
+            "section": "Framework Development"
+          }
+        },
+        {
+          "description": "Established SAS governance and quality protocols adopted across the actuarial function.",
+          "source": {
+            "path": "data-analyst-general/MassimoRasoCV2025.pdf",
+            "page": 2,
+            "section": "Data Governance Implementation"
+          }
+        },
+        {
+          "description": "Awarded twice for analytics innovation and leadership as protocols scaled agency-wide.",
+          "source": {
+            "path": "data-analyst-general/MassimoRasoCV2025.pdf",
+            "page": 2,
+            "section": "Innovation Recognition"
+          }
+        }
+      ]
+    },
+    {
+      "role_id": "personal_ai_edge_projects",
+      "title": "Personal AI & Edge Computing Projects",
+      "company": "Self-Initiated",
+      "location": "Sydney, NSW",
+      "timeframe": {
+        "start": "2019-01",
+        "end": null
+      },
+      "summary": "Hands-on RAG/LLM automation and IoT experiments that merge enterprise data-engineering rigor with Raspberry Pi and ESP32-based sensing platforms.",
+      "core_tech": [
+        "RAG/LLM",
+        "Docker",
+        "Raspberry Pi",
+        "ESP32",
+        "Claude Code",
+        "Cursor",
+        "MCP Servers"
+      ],
+      "highlights": [
+        {
+          "description": "Implemented secure RAG-LLM workflows and MCP servers that connect multiple AI systems for code intelligence use cases.",
+          "source": {
+            "path": "supporting-materials/cover-letter-drone-detection.md",
+            "line": 18
+          }
+        },
+        {
+          "description": "Built Dockerised applications on Raspberry Pi and ESP32 hardware integrating sensors, cameras, and magnetic inputs for edge detection experiments.",
+          "source": {
+            "path": "supporting-materials/cover-letter-drone-detection.md",
+            "line": 20
+          }
+        },
+        {
+          "description": "Explored Arduino and ESP32 microcontroller projects that blend enterprise-grade data pipeline design with low-power deployments.",
+          "source": {
+            "path": "supporting-materials/cover-letter-drone-detection.md",
+            "line": 16
+          }
+        }
+      ]
+    }
+  ]
+}
